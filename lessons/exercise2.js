@@ -48,6 +48,8 @@ var car1 = {
     brand: "Toyota",
     model: "Corolla"
 }
+console.log(car1)
+
 car1.year = 2000;
 car1.model = "Rav4"
 console.log(car1)
@@ -68,6 +70,8 @@ var book = {
   author: "George Orwell",
   pages: 328
 }
+console.log(book)
+
 delete book.pages;
 console.log(book)
 
@@ -90,17 +94,13 @@ console.log(student[property]);
 
 /*
 Exercise 5: Loop through an object
-
 Given:
-
 const pet = {
   name: "Buddy",
   type: "Dog",
   age: 4
 };
-
 Print:
-
 name: Buddy
 type: Dog
 age: 4
@@ -110,22 +110,17 @@ const pet = {
   type: "Dog",
   age: 4
 };
-
 for (const c in pet) {
   console.log(`${c}: ${pet[c]}`);
 }
 
 /*
 Exercise 6: Object methods
-
 Create an object:
-
 const calculator = {
   ...
 };
-
 It should contain methods:
-
 add(a, b)
 subtract(a, b)
 multiply(a, b)
@@ -150,9 +145,7 @@ console.log(calculator.multiply(4, 6));  // 24
 
 /*
 Exercise 7: Nested objects
-
 Create this object:
-
 const user = {
   name: "Sarah",
   address: {
@@ -162,7 +155,6 @@ const user = {
 };
 
 Print only:
-
 Berlin
 
 Then update the ZIP code.
@@ -206,7 +198,7 @@ for (const product of products) {
   console.log(product.name);
 }
 
-console.log("------------");
+//console.log("------------");
 
 // Print products over 500
 for (const product of products) {
@@ -217,15 +209,12 @@ for (const product of products) {
 
 /*
 Exercise 9: Count object properties
-
 Write a function:
-
 function countProperties(obj) {
 
 }
 
 Example:
-
 countProperties({
   a: 1,
   b: 2,
@@ -235,7 +224,8 @@ countProperties({
 Returns:
 
 3
-*/function countProperties(obj) {
+*/
+function countProperties(obj) {
   return Object.keys(obj).length;
 }
 
@@ -264,7 +254,8 @@ listItems()
 findItem(name)
 addStock(name, amount)
 sellItem(name, amount)
-*/const store = {
+*/
+const store = {
   inventory: [
     { name: "Apple", quantity: 10 },
     { name: "Banana", quantity: 5 },
@@ -336,7 +327,8 @@ account.transfer(alice, 200);
 
 console.log(account.balance); // 800
 console.log(alice.balance);   // 700
-*/const account = {
+*/
+const account = {
   owner: "John",
   balance: 1000,
 
